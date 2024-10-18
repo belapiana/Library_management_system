@@ -18,7 +18,14 @@ this._isAvailable = true
     }
 }
 
-const livro = new Book ('Hello', 'Me', 543763)
-console.log(livro)
-livro.changeAvailability = true
-console.log(livro)
+// Task 2:
+class Section {
+    constructor(name){
+        this._name = name
+        this._books = []
+    }
+
+    addBook(newBook) {this._books.push(newBook)}
+    getAvailableBooks() {return this._books.filter(book => book.isAvailable).length}
+    listAvailableBooks() {return this._books.map(book => `Title: ${book._title}, Availability: ${book.isAvailable}`)}
+}

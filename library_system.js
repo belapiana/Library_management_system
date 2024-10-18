@@ -52,6 +52,13 @@ class Patron {
 
 // Task 4: 
 
+class VipPatron extends Patron {
+    constructor (name) {
+        super (name)
+        this._priority = true
+    }
+}
+
 // Test data
 
 const drama = new Section ('Drama')

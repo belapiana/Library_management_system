@@ -70,18 +70,18 @@ class VipPatron extends Patron { // using extends for inheritance
 // Task 6: Create and Manage Sections and Patrons
 
 const drama = new Section ('Drama')
-const romance = new Section ('Romance')
+const romance = new Section ('Romance') // creating instances of Section class
 
 const book1 = new Book ("Cinderella", 'Charles Perrault', 53268329 )
 const book2 = new Book ('Sleeping Beauty', 'Grim Brothers', 632732832)
-const book3 = new Book ('Three Little Pigs', "Joseph Jacobs", 6377382)
+const book3 = new Book ('Three Little Pigs', "Joseph Jacobs", 6377382) // creating instances of Book class
 
 drama.addBook(book1)
 drama.addBook(book2)
 romance.addBook(book3) // pushing books to array
 
 const patron1 = new Patron ('Isabela')
-const patron2 = new Patron ('Manuela')
+const patron2 = new Patron ('Manuela') // creating instances of Patron class
 
 // Testing all the methods
 book1.changeAvailability = true
@@ -91,3 +91,4 @@ patron1.returnBook(book1)
 console.log(patron1._borrowedBooks)
 console.log(drama.getAvailableBooks())
 console.log(romance.listBooks())
+console.log(book1.getDetails)
